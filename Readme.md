@@ -11,6 +11,9 @@
 
 ## API
 
+### `bool str_ends_with(char *str, char *end)`
+
+  Check if `str` ends with `end`
 
 ## License
 
