@@ -11,7 +11,7 @@
 
 ## API
 
-### `bool str_ends_with(char *str, char *end)`
+### `bool str_ends_with(const char *str, const char *end)`
 
   Check if `str` ends with `end`
 
