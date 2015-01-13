@@ -14,12 +14,12 @@ bool str_ends_with(const char *str, const char *end) {
   int end_len;
   int str_len;
   
-  assert(str != NULL);
-  assert(end != NULL);
-  
+  if (NULL==str || NULL==end)
+    return false;
+    
   end_len = strlen(end);
   str_len = strlen(str);
-
+  
   return str_len < end_len
        ? false
        : !strcmp(str + str_len - end_len, end);
