@@ -1,9 +1,11 @@
 
+#include <stdlib.h>
 #include <stdbool.h>
 #include <assert.h>
 #include "src/str-ends-with.h"
 
 int main(int argc, char **argv) {
+  assert(false == str_ends_with(NULL, NULL));
   assert(false == str_ends_with("hello", "hello world"));
   assert(false == str_ends_with("hello", "hell"));
   assert(false == str_ends_with("hello", "hel"));
